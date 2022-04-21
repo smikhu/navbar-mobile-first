@@ -91,3 +91,48 @@ nav {
 #check:checked ~ .nav-list li {
     opacity: 1;
 }
+
+
+/* DESKTOP */
+
+@media only screen and (min-width: 900px) {
+    body {
+        background-color: #0279e5;
+    }
+    .logo-container {
+        margin-left: 25px;
+    }
+
+    nav {
+        height: 100px;
+        background-color: transparent;
+
+    }
+
+    .hamburger-btn {
+        display: none;
+    }
+
+    .nav-list {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        float: right;
+        text-align: right;
+        margin-right: 25px;
+        transition: none;
+    }
+
+    .nav-list li {
+        display: inline-block;
+        opacity: 1;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-list li a.active, .nav-list li a:hover {
+        color: #ffffff;
+    }
+}
